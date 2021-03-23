@@ -1,0 +1,149 @@
+/*global*/
+:root{
+    --primary: rgb(43, 43, 43);
+    --text: rgb(202, 24, 60);
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-size:1.1rem;
+    line-height:2;
+    margin-top:1rem;
+}
+h2,h3{
+    margin:1rem;
+    text-align:center;
+}
+h2{
+    font-size:2rem;
+}
+h3{
+    font-size:1.5rem;
+}
+
+/*utilities */
+.site-header{
+    background-image: url(../img/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    height:55vh;
+}
+.site-header img{
+    width:15rem;
+    height:15rem;
+    border-radius: 50%;
+    border:8px dashed black;
+    padding:3px;
+    opacity: .85;
+    filter: grayscale(70%);
+}
+.site-header p{
+    margin-top:1rem;
+    font-size:2rem;
+}
+.site-header h1{
+   padding-top:1rem;
+   font-size:2rem;
+}
+.container{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* menu */
+nav.menu{
+    background-color: var(--primary);
+    text-align: center;
+
+}
+nav.menu a{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    padding:1rem;
+    margin-right:3rem;
+}
+@media(max-width:768px){
+    nav.menu a{
+        display:block;
+    }
+}
+nav.menu a:hover{
+    font-size: 1.4rem;
+    color:var(--text);
+    font-weight: bold;
+}
+
+/* service */
+.services-container{
+        display:flex;
+    }
+@media(max-width: 768px){
+    .services-container{
+        display:block;
+    }
+}
+.service{
+    background-color:#dedede;
+    padding:2rem;
+    border-radius: 10px;
+    margin:2rem;
+}
+
+/* icons */
+.icons{
+    text-align: center;
+}
+.icons i{
+    margin-right: 2rem;
+}
+.fa-html5{
+    font-size:3rem;
+    color:#e65705;
+}
+.fa-css3-alt{
+    font-size:3rem;
+    color: blue;
+}
+.fa-js-square{
+    font-size:3rem;
+    color:#e4d500;
+}
+.fa-python{
+    font-size:3rem;
+    color: rgb(0, 44, 190);
+}
+
+/* footer */
+.footer-site{
+background-color:var(--primary);
+color: white;
+font-size:1rem;
+text-align:center;
+padding:1rem 0;
+margin-top:1rem;
+}
+/* bio */
+.bio{
+    background-color:teal;
+    margin:5rem;
+    padding:1rem;
+    border-radius:15px;
+}
+
+/* projects */
+.project{
+    background-color: #dedede;
+    border:1px solid black;
+    padding:1rem;
+    margin-top:1rem;
+    border-radius:10px;
+}
